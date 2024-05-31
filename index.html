@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>List Your Work To-Dos</h1>
+    </header>
+
+    <section class="main">
+      <div class="btns">
+        <button class="btn delete">Delete Item 🗑️</button>
+        <button class="btn list">List 📃</button>
+        <button class="btn add">Add Item 📝</button>
+      </div>
+
+      <form class="add-form hidden">
+        <input class="title" placeholder="Title" type="text" />
+        <textarea class="description" placeholder="Description"></textarea>
+        <div class="checkbox">
+          <div>
+            <input
+              class="stat"
+              name="status"
+              value="regular"
+              type="radio"
+              checked
+            />Regular
+          </div>
+          <div>
+            <input
+              class="stat"
+              name="status"
+              value="important"
+              type="radio"
+            />Important
+          </div>
+        </div>
+        <input type="submit" class="submit btn" />
+      </form>
+
+      <form class="list-form">
+        <p class="empty hidden">No Item Is Available ...</p>
+        <!-- <div class="list-item">
+            <div>
+                <h3 class="list-title">Title on Date</h3>
+                <p class="list-desc">Description Must Be Put Here !</p>
+            </div>
+            <div class="list-status"></div>
+        </div> -->
+      </form>
+    </section>
+  </body>
+</html>
